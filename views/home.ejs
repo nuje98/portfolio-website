@@ -4,47 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anuj Jhamb</title>
-    <link rel="stylesheet" href="/css/particle.css">
+    <!--<link rel="stylesheet" href="/css/particle.css">-->
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!--  local css  -->
+    <link rel="stylesheet" href="/css/home.css">
+    <!--  responsive css  -->
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!--  bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-    <script src="/js/home.js"></script>
+    <!--<script src="/js/home.js"></script> -->
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">
-            Anuj Jhamb
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/family">Family</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Experience
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/projects">Projects</a>
-                <a class="dropdown-item" href="/experience">Internships</a>
-                <a class="dropdown-item" href="/responsibility">Position of Responsibility</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+    <header class="header_area">
+      <div class="main-menu">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="/">
+              Anuj Jhamb
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
               </li>
-          </ul>
-        </div>
-    </nav>
+              <li class="nav-item">
+                  <a class="nav-link" href="/family">Family</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Experience
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/projects">Projects</a>
+                  <a class="dropdown-item" href="/experience">Internships</a>
+                  <a class="dropdown-item" href="/responsibility">Position of Responsibility</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- Start Main Area -->
+    <main class="site-main">
 
+      <!-- Start Banner Area -->
+      <section class="site-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 site-title">
+              <h3 class="title-text">नमस्ते ! ! !</h3>
+              <h1 class="title-text text-uppercase">I am Anuj</h1>
+              <h4 class="title-text text-uppercase">I am a Software Developer</h4>
+              <div class="site-buttons">
+                  <div class="d-flex flex-row flex-wrap">
+                    <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
+                      me</button>
+                    <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 banner-image">
+              <img src="/images/banner-image.png" alt="banner-img" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Banner Area -->
+
+      <!-- Start About Area -->
+      <section class="about-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="about-image">
+                <img src="/images/about-us.png" alt="About us" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-title">
+              <h2 class="text-uppercase pt-5">
+                <span>Let me</span>
+                <span>introduce</span>
+                <span>myself</span>
+              </h2>
+              <div class="paragraph py-4 w-75">
+                <p class="para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
+                  possimus officia maiores perferendis ut! Quos, perspiciatis.
+                </p>
+                <p class="para">
+                    It is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                    here
+                </p>
+              </div>
+                <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+            </div>
+          </div>
+        </div>
+      </section> 
+    </main>
+
+    <!--Footer-->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="">
+          <div class="site-logo text-center py-4">
+            <a href="#"><img src="./img/logo.png" alt="logo"></a>
+          </div>
+          <div class="social text-center">
+            <h5 class="text-uppercase">Follow me</h5>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="copyrights text-center">
+            <p class="para">
+                Copyright ©2020 All rights reserved | This portfolio is made by
+                <a href="#"><span style="color: var(--primary-color);">Anuj Jhamb</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>    
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

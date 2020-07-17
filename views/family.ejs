@@ -2,109 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/family.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/family.css">
     <title>My Family</title>
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">
-            Anuj Jhamb
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/family">Family</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Experience
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/projects">Projects</a>
-                <a class="dropdown-item" href="/experience">Internships</a>
-                <a class="dropdown-item" href="/responsibility">Position of Responsibility</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
-              </li>
-          </ul>
+    <div class="box">
+        <div class="imgBx">
+            <img src="/images/anil2.jpg">
         </div>
-    </nav>
-
-    <!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="/images/anil2.jpg">
-                </div>
-                <div class="details">
-                    <h3>Anil Jhamb<br><span>Father</span></h3>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="/images/arch3.jpg">
-                </div>
-                <div class="details">
-                    <h3>Archna Jhamb<br><span>Mother</span></h3>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="/images/aadi1.jpg">
-                </div>
-                <div class="details">
-                    <h3>Aaditi Jhamb<br><span>Sister</span></h3>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="/images/anuj2.jpg">
-                </div>
-                <div class="details">
-                    <h3>Anuj Jhamb<br><span>Myself</span></h3>
-                </div>
-            </div>
+        <div class="content">
+            <h2>Anil Jhamb<br><span>Father</span></h2>
         </div>
-          <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
-
-    <script type="text/javascript" src="/js/swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 60,
-            stretch: 0,
-            depth: 500,
-            modifier: 1,
-            slideShadows : true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-    </script>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="box">
+        <div class="imgBx">
+            <img src="/images/arch3.jpg">
+        </div>
+        <div class="content">
+            <h2>Archna Jhamb<br><span>Mother</span></h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="/images/aadi1.jpg">
+        </div>
+        <div class="content">
+            <h2>Aaditi Jhamb<br><span>Sister</span></h2>
+        </div>
+    </div>
 </body>
 </html>

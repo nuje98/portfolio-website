@@ -16,8 +16,8 @@ router.get('/grades', (req, res) => res.render('grades'));
 // Projects
 router.get('/projects', (req, res) => res.render('projects'));
 
-// Experience
-router.get('/experience', (req, res) => res.render('experience'));
+// internships
+router.get('/internships', (req, res) => res.render('internships'));
 
 // Achievements
 router.get('/achievements', (req, res) => res.render('achievements'));

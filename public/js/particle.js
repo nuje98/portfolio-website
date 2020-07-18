@@ -12,7 +12,7 @@ function setup()
 
 function draw()
 {
-    background(55,100,144);
+    background(255,255,255);
     particles.forEach((p,index) => {
         p.update();
         p.draw();
@@ -25,7 +25,7 @@ class Particle
     constructor()
     {
         this.pos = createVector(random(width),random(height));
-        this.size = 10;
+        this.size = 13;
         this.vel = createVector(random(-3,3),random(-3,3));
     }
     update()
@@ -36,7 +36,7 @@ class Particle
     draw()
     {
         noStroke();
-        fill('rgba(255,255,255,0.5)');
+        fill('rgba(0,0,0,0.5)');
         circle(this.pos.x,this.pos.y,this.size);
     }
     edges()
@@ -56,7 +56,7 @@ class Particle
             const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
             if(d<120)
             {
-                stroke('rgba(255,255,255,0.1)');
+                stroke('rgba(0,0,0,0.1)');
                 line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
             }
         });

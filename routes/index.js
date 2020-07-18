@@ -13,6 +13,15 @@ router.get('/education', (req, res) => res.render('education'));
 // Grades
 router.get('/grades', (req, res) => res.render('grades'));
 
+// Secondary
+router.get('/secondary', (req, res) => res.render('secondary'));
+
+// Senior Secondary
+router.get('/senior', (req, res) => res.render('senior'));
+
+// Undergraduation
+router.get('/undergrad', (req, res) => res.render('undergrad'));
+
 // Projects
 router.get('/projects', (req, res) => res.render('projects'));
 

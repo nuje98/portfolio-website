@@ -14,6 +14,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+.body{
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
 .container .box{
     text-align: center;
 }

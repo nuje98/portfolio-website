@@ -1,0 +1,94 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: verdana;
+}
+.cardSlider
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 400px;
+    background: #fff;
+    overflow: hidden;
+}
+.cardContainer
+{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background: #ff0;
+}
+.cardNavbar
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.cardNavbar ul
+{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    height: 100%;
+}
+.cardNavbar ul li
+{
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px solid #262626;
+    text-transform: uppercase;
+}
+.cardNavbar ul li:hover
+{
+    background: #3484ff;
+    color: #fff;
+}
+.cardNavbar ul li:last-child
+{
+    border-right: none;
+}
+.cardContainer .cardSingle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 50px;
+    background: #f00;
+    background-position: center !important;
+}
+article
+{
+    background: rgba(255,255,255,.8);
+    padding: 20px;
+}
+.cardContainer .cardSingle:nth-child(1)
+{
+    background: url(bg1.jpg);
+}
+.cardContainer .cardSingle:nth-child(2)
+{
+    background: url(bg2.jpg);
+}
+.cardContainer .cardSingle:nth-child(3)
+{
+    background: url(bg3.jpg);
+}
+.cardContainer .cardSingle:nth-child(4)
+{
+    background: url(bg4.jpg);
+}
+.active
+{
+    z-index: 1;
+}

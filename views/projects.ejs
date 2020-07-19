@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/css/project.css">
 </head>
 <body>
+    <div class="splash">
+        <div class="body">
+            <h2><span>I</span>M<span>POSSIBLE</span></h2>
+        </div>
+    </div> 
     <div class="cardSlider">
         <div class="cardContainer">
             <div class="cardSingle">
@@ -19,54 +24,63 @@
                 <article>
                     <h1>KitaabX</h1>
                     <p>Designed a web portal using HTML, CSS, Javascript, MongoDB, NodeJS, ExpressJS that serves handwritten notes of different subjects. Students can create their own accounts and have access to the content.</p>
+                    <a href="https://github.com/nuje98/KitaabX">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
-                    <h1>Pizza HUb</h1>
+                    <h1>Pizza Hub</h1>
                     <p>Developed an Android application which can be used for online pizza ordering service. Implemented the authentication system using Google Firebase.</p>
+                    <a href="https://github.com/nuje98/Pizza-Hub">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
                     <h1>Weather App</h1>
                     <p>Developed a weather application using Django, HTML, CSS which gives the real time weather information by using API of openweathermap.com</p>
+                    <a href="https://github.com/nuje98/Weather-App">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
                     <h1>Stone Papper Scissors</h1>
                     <p>Developed stone-paper-scissors game using JavaScript</p></a>
+                    <a href="https://github.com/nuje98/stone-paper-scissors">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
                     <h1>AquaMart</h1>
                     <p>It is an Ecommerce website (B2C) which deals with selling products related to fishery. It is a platform for different vendors to sell their products directly to customers.</p>
+                    <a href="https://github.com/nuje98/aquamart">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
                     <h1>Portfolio</h1>
                     <p>Developed an online portfolio/resume  application which you're viewing right now using HTML, CSS, Bootstrap, JavaScript, jQuery, NodeJS, ExpressJS</p>
+                    <a href="https://github.com/nuje98/portfolio-website">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
                     <h1>Alexa Game Skill</h1>
                     <p>It is a riddle game skill. Multiple users can play it on any Alexa enabled devices. There is a weekly leaderboard setup using GameOn SDK as well. </p>
+                    <a href="https://github.com/nuje98/Alexa-Riddle-Skill">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
                     <h1>Exercise Tracker</h1>
                     <p>Build an Exercise tracker based on MERN i.e. MOngoDB, Express, ReactJS, and NodeJS</p>
+                    <a href="https://github.com/nuje98/MERN-Exercise-Tracker">Link to GitHub Repository</a>
                 </article>
             </div>
             <div class="cardSingle">
                 <article>
                     <h1>Particle Effect</h1>
                     <p>Build a simple web page using p5.js library.</p>
+                    <a href="https://github.com/nuje98/particles-effects">Link to GitHub Repository</a>
                 </article>
             </div>
         </div>
@@ -128,6 +142,14 @@
                 $('.cardContainer .cardSingle').removeClass('active');
                 $('.cardContainer .cardSingle:nth-child(10)').addClass('active');
             })
+        })
+    </script>
+    <script>
+        const splash = document.querySelector('.splash');
+        document.addEventListener('DOMContentLoaded', (e)=>{
+          setTimeout(()=>{
+            splash.classList.add('display-none');
+          }, 2000);
         })
     </script>
 </body>

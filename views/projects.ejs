@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cardSlider">
+        <div class="cardContainer">
+            <div class="cardSingle">
+                <article>
+                    <h1>Card 1</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </article>
+            </div>
+            <div class="cardSingle">
+                <article>
+                    <h1>Card 2</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </article>
+            </div>
+            <div class="cardSingle">
+                <article>
+                    <h1>Card 3</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </article>
+            </div>
+            <div class="cardSingle">
+                <article>
+                    <h1>Card 4</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </article>
+            </div>
+        </div>
+        <div class="cardNavbar">
+            <ul>
+                <li>Card One</li>
+                <li>Card Two</li>
+                <li>Card Three</li>
+                <li>Card Four</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.cardNavbar ul li:nth-child(1)').on('mouseover',function(){
+                $('.cardContainer .cardSingle').removeClass('active');
+                $('.cardContainer .cardSingle:nth-child(1)').addClass('active');
+            })
+            $('.cardNavbar ul li:nth-child(2)').on('mouseover',function(){
+                $('.cardContainer .cardSingle').removeClass('active');
+                $('.cardContainer .cardSingle:nth-child(2)').addClass('active');
+            })
+            $('.cardNavbar ul li:nth-child(3)').on('mouseover',function(){
+                $('.cardContainer .cardSingle').removeClass('active');
+                $('.cardContainer .cardSingle:nth-child(3)').addClass('active');
+            })
+            $('.cardNavbar ul li:nth-child(4)').on('mouseover',function(){
+                $('.cardContainer .cardSingle').removeClass('active');
+                $('.cardContainer .cardSingle:nth-child(4)').addClass('active');
+            })
+        })
+    </script>
+</body>
+</html>

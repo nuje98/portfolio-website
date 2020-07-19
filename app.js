@@ -21,6 +21,7 @@ app.use( express.static( __dirname + "/public" ) );
 
 //Routes
 app.use('/', require('./routes/index'));
+app.use('/skills', require('./routes/skills'));
 
 const PORT = process.env.PORT || 5000;
 

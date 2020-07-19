@@ -34,10 +34,10 @@ router.get('/achievements', (req, res) => res.render('achievements'));
 // Responsibility
 router.get('/responsibility', (req, res) => res.render('responsibility'));
 
-// skills
-router.get('/skills', (req, res) => res.render('skills'));
-
 // contact
 router.get('/contact', (req, res) => res.render('contact'));
+
+// gallery
+router.get('/gallery', (req, res) => res.render('gallery'));
 
 module.exports = router;

@@ -139,41 +139,41 @@ article
 }
 .cardContainer .cardSingle:nth-child(1)
 {
-    background: url(/images/bg1.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg1.jpg);
 }
 .cardContainer .cardSingle:nth-child(2)
 {
-    background: url(/images/bg2.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg2.jpg);
 }
 .cardContainer .cardSingle:nth-child(3)
 {
-    background: url(/images/bg3.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg3.jpg);
 }
 .cardContainer .cardSingle:nth-child(4)
 {
-    background: url(/images/bg4.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg4.jpg);
 }
 .cardContainer .cardSingle:nth-child(5)
 {
-    background: url(/images/bg5.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg5.jpg);
 }
 .cardContainer .cardSingle:nth-child(6)
 {
-    background: url(/images/bg6.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg6.jpg);
 }
 .cardContainer .cardSingle:nth-child(7)
 {
-    background: url(/images/bg7.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg7.jpg);
 }
 .cardContainer .cardSingle:nth-child(8)
 {
-    background: url(/images/bg8.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg8.jpg);
 }
 .cardContainer .cardSingle:nth-child(9)
 {
-    background: url(/images/bg9.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg9.jpg);
 }
 .cardContainer .cardSingle:nth-child(10)
 {
-    background: url(/images/bg2.jpg);
+    background: url(https://port-img.s3.amazonaws.com/bg2.jpg);
 }

@@ -40,4 +40,7 @@ router.get('/contact', (req, res) => res.render('contact'));
 // gallery
 router.get('/gallery', (req, res) => res.render('gallery'));
 
+// certifications
+router.get('/certifications', (req, res) => res.render('certifications'));
+
 module.exports = router;

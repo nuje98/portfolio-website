@@ -20,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 40px;
-    transition: 0.5s;
+    transition: 0.2s;
     background: #060c21;
 }
 .box:hover{
@@ -38,7 +38,7 @@ body{
 .box .imgBx img{
     max-width: 100%;
     opacity: 0.1;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .box:hover .imgBx img{
     opacity: 1;
@@ -90,7 +90,7 @@ body{
     align-items: center;
     text-align: center;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .box:hover .content{
     opacity: 1;

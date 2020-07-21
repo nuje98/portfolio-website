@@ -193,3 +193,27 @@ header #toggle:after{
         margin-right: 10px;
     }
 }
+.banner .content div:before{
+    content: '';
+    animation: animate infinite 8s;
+}
+@keyframes animate{
+    0%{
+        content: 'Hello ';
+    }
+    20%{
+        content: 'नमस्ते ';
+    }
+    40%{
+        content: 'Hola ';
+    }
+    60%{
+        content: 'Bonjour ';
+    }
+    80%{
+        content: 'Ni hao ';
+    }
+    100%{
+        content: 'Ciao ';
+    }
+}

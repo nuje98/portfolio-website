@@ -82,7 +82,7 @@
     padding: 0;
 }
 .bod{
-    position: absolute;
+    position: fixed;
 }
 body{
     display: flex;

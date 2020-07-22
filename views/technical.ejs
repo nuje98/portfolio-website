@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="/css/technical.css">
 </head>
 <body>
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
     <div class="container">
         <a href="/skills"><button class="btn btn1">Skills</button></a>
         <a href="/projects"><button class="btn btn2">Projects</button></a>
@@ -15,5 +32,12 @@
         <a href="/achievements"><button class="btn btn5">Achievements</button></a>
         <a href="/responsibility"><button class="btn btn6">Position of Responsibility</button></a>
     </div>
+    <script>
+        function onClickMenu(){
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
 </body>
 </html>

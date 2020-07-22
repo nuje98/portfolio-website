@@ -7,28 +7,54 @@
     <link rel="stylesheet" href="/css/grades.css">
 </head>
 <body>
-    <a href="/secondary">Secondary</a>
-    <br>
-    <a href="/senior">Senior Secondary</a>
-    <br>
-    <a href="/undergrad">Undergraduation</a>
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+
+
+    <div class="bod">
+        <a class="a1" href="/secondary">Secondary</a>
+        <br>
+        <a class="a2" href="/senior">Senior Secondary</a>
+        <br>
+        <a class="a3" href="/undergrad">Undergraduation</a>
+    </div>
     <script type="text/javascript">
         const buttons = document.querySelectorAll('a');
         buttons.forEach(btn => {
             btn.addEventListener('click', function(e){
                 let x = e.clientX - e.target.offsetLeft;
                 let y = e.clientY - e.target.offsetTop;
-
                 let ripples = document.createElement('span');
                 ripples.style.left = x + 'px';
                 ripples.style.top = y + 'px';
                 this.appendChild(ripples);
-
                 setTimeout(() => {
                     ripples.remove()
                 },1000);
             })
         })
+    </script>
+    <script>
+        function onClickMenu(){
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
     </script>
 </body>
 </html>

@@ -7,6 +7,9 @@ body{
     min-height: 100vh;
     background: #031321;
 }
+.bod{
+    position: absolute;
+}
 a{
     position: relative;
     display: inline-block;
@@ -76,69 +79,3 @@ a:hover span:nth-child(4){
     transition: 0.3s;
     transition-delay: 0.5s;
 }
-/* Table */
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
-}
-h2{
-    text-align: center;
-}
-th,td{
-    text-align: center;
-    padding: 15px;
-}
-tr:nth-child(even){
-    background-color: #f2f2f2;
-}
-tr:nth-child(even):hover{
-    background-color: #FF6F61;
-    color: black;
-}
-th{
-    background-color: #955251;
-    color: white;
-}
-tr:nth-child(odd):hover{
-    background-color: #009B77;
-    color: black;
-}
-/* Modal */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close1,.close2,.close3,.close4,.close5,.close6 {
-    color: red;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }

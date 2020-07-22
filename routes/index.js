@@ -43,6 +43,24 @@ router.get('/gallery', (req, res) => res.render('gallery'));
 // certifications
 router.get('/certifications', (req, res) => res.render('certifications'));
 
+// sem1
+router.get('/sem1', (req, res) => res.render('sem1'));
+
+// sem2
+router.get('/sem2', (req, res) => res.render('sem2'));
+
+// sem3
+router.get('/sem3', (req, res) => res.render('sem3'));
+
+// sem4
+router.get('/sem4', (req, res) => res.render('sem4'));
+
+// sem5
+router.get('/sem5', (req, res) => res.render('sem5'));
+
+// sem6
+router.get('/sem6', (req, res) => res.render('sem6'));
+
 // technical
 router.get('/technical', (req, res) => res.render('technical'));
 

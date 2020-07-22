@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="/css/internships.css">
 </head>
 <body>
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
     <div class="container">
         <div class="box">
             <div class="content">
                 <h2>1</h2>
                 <h3>Terra Cognita</h3>
-                <p>Native Speaker - Indian Partner</p>
+                <p>Native Speaker - Indian Partner</p><br>
                 <p>January 2019 - Present</p>
                 <!--<a href="#">Read More</a>-->
             </div>
@@ -21,7 +38,7 @@
             <div class="content">
                 <h2>2</h2>
                 <h3>Ricoh India Pvt. Ltd.</h3>
-                <p>Software Developer Intern</p>
+                <p>Software Developer Intern</p><br>
                 <p>May 2019 - July 2019</p>
                 <!--<a href="#">Read More</a>-->
             </div>
@@ -30,7 +47,7 @@
             <div class="content">
                 <h2>3</h2>
                 <h3>JP Morgan Chase</h3>
-                <p>Software Development Virtual Experience</p>
+                <p>Software Development Virtual Experience</p><br>
                 <p>April 2020 - April 2020</p>
                 <!--<a href="#">Read More</a>-->
             </div>
@@ -39,11 +56,18 @@
             <div class="content">
                 <h2>4</h2>
                 <h3>Jaljeevika</h3>
-                <p>Software Developer Intern</p>
+                <p>Software Developer Intern</p><br>
                 <p>May 2020 - July 2020</p>
                 <!--<a href="#">Read More</a>-->
             </div>
         </div>
     </div>
+    <script>
+        function onClickMenu(){
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
 </body>
 </html>

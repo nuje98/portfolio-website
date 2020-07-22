@@ -25,30 +25,28 @@
     </div>
     <div class="menu-bg" id="menu-bg"></div>
 
-
-    <div class="bod">
-        <a class="a1" href="/secondary">Secondary</a>
-        <br>
-        <a class="a2" href="/senior">Senior Secondary</a>
-        <br>
-        <a class="a3" href="/undergrad">Under Graduation</a>
-    </div>
-    <script type="text/javascript">
-        const buttons = document.querySelectorAll('a');
-        buttons.forEach(btn => {
-            btn.addEventListener('click', function(e){
-                let x = e.clientX - e.target.offsetLeft;
-                let y = e.clientY - e.target.offsetTop;
-                let ripples = document.createElement('span');
-                ripples.style.left = x + 'px';
-                ripples.style.top = y + 'px';
-                this.appendChild(ripples);
-                setTimeout(() => {
-                    ripples.remove()
-                },1000);
-            })
-        })
-    </script>
+    <a class="anch a1" href="/secondary">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Secondary
+    </a>
+    <a class="anch a2" href="/senior">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Senior Sec.
+    </a>
+    <a class="anch a3" href="/undergrad">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Undergrad.
+    </a>
+    
     <script>
         function onClickMenu(){
             document.getElementById("menu").classList.toggle("change");

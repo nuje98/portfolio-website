@@ -54,7 +54,7 @@ header #toggle:after{
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: url(/images/bg.jpg);
+    background: url(/images/bg1.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -202,10 +202,10 @@ header #toggle:after{
         content: 'Hello ';
     }
     20%{
-        content: 'नमस्ते ';
+        content: 'Hola ';
     }
     40%{
-        content: 'Hola ';
+        content: 'नमस्ते ';
     }
     60%{
         content: 'Bonjour ';

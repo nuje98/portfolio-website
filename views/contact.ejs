@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Info.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-    <title>Contact Info</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  </head>
+  <body>
     <div id="menu-bar">
         <div id="menu" onclick="onClickMenu()">
             <div id="bar1" class="bar"></div>
@@ -26,42 +25,29 @@
         </ul>
     </div>
     <div class="menu-bg" id="menu-bg"></div>
-    <div class="body">
-        <div class="container">
-            <div class="box">
-                <div class="icon">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <h4>Address</h4>
-                    <h3>Shirpur, 425405, India</h3>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="box">
-                <div class="icon">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <h4>Mobile</h4>
-                    <h3>+91 9530094900</h3>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="box">
-                <div class="icon">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <h4>Email</h4>
-                    <h3>anuj.jhamb23@gmail.com</h3>
-                </div>
-            </div>
-        </div>
+
+    <div class="contact-info">
+      <div class="card">
+        <i class="card-icon far fa-envelope"></i>
+        <p>anuj.jhamb23@gmail.com</p>
+      </div>
+
+      <div class="card">
+        <i class="card-icon fas fa-phone"></i>
+        <p>+919530094900</p>
+      </div>
+
+      <div class="card">
+        <i class="card-icon fas fa-map-marker-alt"></i>
+        <p>Shirpur, India</p>
+      </div>
     </div>
-    <script src="/js/particle.js"></script>
     <script>
-      function onClickMenu(){
-        document.getElementById("menu").classList.toggle("change");
-        document.getElementById("nav").classList.toggle("change");
-        document.getElementById("menu-bg").classList.toggle("change-bg");
-      }
+        function onClickMenu(){
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
     </script>
-</body>
+  </body>
 </html>

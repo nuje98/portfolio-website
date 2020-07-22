@@ -211,7 +211,7 @@ header #toggle:after{
         content: 'Bonjour ';
     }
     80%{
-        content: 'Assalam-o-alaikum ';
+        content: 'Privet ';
     }
     100%{
         content: 'Ciao ';

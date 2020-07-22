@@ -28,6 +28,8 @@
 .nav li{
 	list-style: none;
 	padding: 16px 0;
+	font-size: large;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav{
 	padding: 0;

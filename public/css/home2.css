@@ -199,10 +199,10 @@ header #toggle:after{
 }
 @keyframes animate{
     0%{
-        content: 'Hello ';
+        content: 'Hola ';
     }
     20%{
-        content: 'Hola ';
+        content: 'Hello ';
     }
     40%{
         content: 'नमस्ते ';

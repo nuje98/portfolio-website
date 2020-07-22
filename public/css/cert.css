@@ -18,16 +18,16 @@
 #bar3{
 	transform: translateY(4px);
 }
-.nav li a{
+.nav .nli .an{
 	color: #fff;
     text-decoration: none;
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.nav li a:hover{
+.nav .nli .an:hover{
 	font-weight: bold;
 }
-.nav li{
+.nav .nli{
 	list-style: none;
 	padding: 16px 0;
 }
@@ -90,6 +90,8 @@ body{
 }
 .list{
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .list h2{
     position: relative;

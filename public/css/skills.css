@@ -78,3 +78,9 @@ ul li a:hover:before{
     transition: 0.5s;
     transition-delay: 0.2s;
 }
+@media screen and (max-width: 800px){
+    ul li a{
+        width: 100%;
+        position: relative;
+    }
+}

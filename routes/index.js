@@ -23,7 +23,7 @@ router.get('/senior', (req, res) => res.render('senior'));
 router.get('/undergrad', (req, res) => res.render('undergrad'));
 
 // Projects
-router.get('/projects', (req, res) => res.render('projects'));
+router.get('/projects', (req, res) => res.render('project'));
 
 // internships
 router.get('/internships', (req, res) => res.render('internships'));

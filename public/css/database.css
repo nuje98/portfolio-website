@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-bodY{
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,4 +124,16 @@ svg circle:nth-child(2){
 .card:nth-child(3) svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 85) / 100);
     stroke: #ff04f7;
+}
+@media screen and (max-width:700px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 25% 75px 25%;
+        
+    }
+    .card{
+        border:10px solid #101010;
+    }
+    
 }

@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/language.css">
     <title>Softwares</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <!--Hamburger Starts-->
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <!--Hamburger Ends-->
     <div class="container">
         <div class="skills">
             <span class="Name">VS Code</span>
@@ -72,5 +92,19 @@
             <span class="Value">50%</span>
         </div>
     </div>
+    <script>
+        function onClickMenu(){
+          document.getElementById("menu").classList.toggle("change");
+          document.getElementById("nav").classList.toggle("change");
+          document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").click(function(){
+              $(".container").toggle();
+            });
+        });
+    </script>
 </body>
 </html>

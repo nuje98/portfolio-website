@@ -5,24 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievements/Participation</title>
     <link rel="stylesheet" href="/css/ach.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="list">
-        <h2>Achievements</h2>
-        <br>
-        <ul>
-            <li><span>InfyTQ (by Infosys) qualified</span></li>
-            <li><span>Girlscript Summer of Code participant</span></li>
-            <li><span>National Competence Evaluation Test qualified</span></li>
-            <li><span>National Engineering Olympiad level-1 qualified</span></li>
-            <li><span>Google Kickstart Rank Round-C: 5862, Round-D: 2889</span></li>
-            <li><span>Secured the 10th position in 10th Boards all over the district</span></li>
-            <li><span>Global rank 171 in June Long Challenge, Codechef Rating: 1844 (4*)</span></li>
-            <li><span>Gold Medalist in International Master Mathematics Olympiad (IMMO)</span></li>
-            <li><span>Successfully completed Hactoberfest 2019 by creating 5 pull requests</span></li>
-            <li><span>University topper in 5th semester and among top 3 for all 6 semesters</span></li>
-            <li><span>Secured 71st rank all over India in Winter of Codes organized by Coding Ninjas</span></li>
+    <!--Hamburger Starts-->
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <!--Hamburger Ends-->
+    <div class="list"><br><br><br><br>
+        <h2>Achievements</h2>
+        <br>
+        <ul class="ul">
+            <li class="li"><span>InfyTQ (by Infosys) qualified</span></li>
+            <li class="li"><span>Girlscript Summer of Code participant</span></li>
+            <li class="li"><span>National Competence Evaluation Test qualified</span></li>
+            <li class="li"><span>National Engineering Olympiad level-1 qualified</span></li>
+            <li class="li"><span>Google Kickstart Rank Round-C: 5862, Round-D: 2889</span></li>
+            <li class="li"><span>Secured the 10th position in 10th Boards all over the district</span></li>
+            <li class="li"><span>Global rank 171 in June Long Challenge, Codechef Rating: 1844 (4*)</span></li>
+            <li class="li"><span>Gold Medalist in International Master Mathematics Olympiad (IMMO)</span></li>
+            <li class="li"><span>Successfully completed Hactoberfest 2019 by creating 5 pull requests</span></li>
+            <li class="li"><span>University topper in 5th semester and among top 3 for all 6 semesters</span></li>
+            <li class="li"><span>Secured 71st rank all over India in Winter of Codes organized by Coding Ninjas</span></li>
+        </ul>
+    </div>
+    <script>
+        function onClickMenu(){
+          document.getElementById("menu").classList.toggle("change");
+          document.getElementById("nav").classList.toggle("change");
+          document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").click(function(){
+              $(".list").toggle();
+            });
+          });
+    </script>
 </body>
 </html>

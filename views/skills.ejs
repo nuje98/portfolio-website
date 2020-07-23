@@ -5,22 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
     <link rel="stylesheet" href="/css/skills.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <ul>
-        <li data-text="Database"><a href="/skills/db">Database</a></li>
+    <!--Hamburger Starts-->
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <!--Hamburger Ends-->
+    <ul class="ul">
+        <li class="li" data-text="Database"><a class="a" href="/skills/db">Database</a></li>
         <br>
-        <li data-text="Languages"><a href="/skills/lang">Languages</a></li>
+        <li class="li" data-text="Languages"><a class="a" href="/skills/lang">Languages</a></li>
         <br>
-        <li data-text="Analytics"><a href="/skills/anal">Analytics</a></li>
+        <li class="li" data-text="Analytics"><a class="a" href="/skills/anal">Analytics</a></li>
         <br>
-        <li data-text="Miscellaneous"><a href="/skills/misc">Miscellaneous</a></li>
+        <li class="li" data-text="Miscellaneous"><a class="a" href="/skills/misc">Miscellaneous</a></li>
         <br>
-        <li data-text="Softwares (IDEs)"><a href="/skills/soft">Softwares (IDEs)</a></li>
+        <li class="li" data-text="Softwares (IDEs)"><a class="a" href="/skills/soft">Softwares (IDEs)</a></li>
         <br>
-        <li data-text="Web Development"><a href="/skills/web">Web Development</a></li>
+        <li class="li" data-text="Web Development"><a class="a" href="/skills/web">Web Development</a></li>
         <br>
-        <li data-text="Operating System"><a href="/skills/os">Operating System</a></li> 
+        <li class="li" data-text="Operating System"><a class="a" href="/skills/os">Operating System</a></li> 
     </ul>
+    <script>
+        function onClickMenu(){
+          document.getElementById("menu").classList.toggle("change");
+          document.getElementById("nav").classList.toggle("change");
+          document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").click(function(){
+              $(".ul").toggle();
+            });
+          });
+    </script>
 </body>
 </html>

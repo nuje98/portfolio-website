@@ -20,7 +20,9 @@
 }
 .nav li a{
 	color: #fff;
-	text-decoration: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav li a:hover{
 	font-weight: bold;

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="/css/gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="menu-bar">
-        <div id="menu" onclick="onClickMenu()">
+    <div id="menu-bar" onclick=" onClickMenu()">
+        <div id="menu">
             <div id="bar1" class="bar"></div>
             <div id="bar2" class="bar"></div>
             <div id="bar3" class="bar"></div>
@@ -39,7 +40,19 @@
             document.getElementById("menu").classList.toggle("change");
             document.getElementById("nav").classList.toggle("change");
             document.getElementById("menu-bg").classList.toggle("change-bg");
+            hide = false;
         }
+        // remove all .active classes when clicked anywhere
+        hide = true;
+        $('body').on("click", function () {
+            if (hide)
+            {
+                $('#menu').removeClass('change');
+                $('#nav').removeClass('change');
+                $('#menu-bg').removeClass('change-bg');
+            } 
+            hide = true;
+        });
     </script>
 </body>
 </html>
